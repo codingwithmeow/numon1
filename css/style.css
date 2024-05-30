@@ -1,31 +1,48 @@
 @charset "utf-8";
 @import url("../webfonts/Geometry/stylesheet.css");
 
-
 body {
-	padding-left: 50px;
-	padding-right: 50px;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 	font-family: Verdana;
 }
 
 .card {
-	 border: none;
-     padding: 20px;
-	 display: flex;
-     justify-content: center; 
-     align-items: center;
-	 text-align: center;
-} 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  text-align: center;
+  flex: 1 1 200px; /* Kartların esnek olmasını sağlar ve min genişlik ayarlar */
+  margin: 10px; /* Kartlar arasında boşluk bırakır */
+  display: flex;
+  flex-direction: column;
+}
+
+.no-link-style {
+  color: inherit;
+  text-decoration: none;
+}
+
+.no-link-style:hover {
+  color: #862058;
+  text-decoration: none;
+  font-weight: bold; 
+}
+
+
+
 
 .container {
 	margin-top: 10px;
 	margin-bottom: 10px;
+	
+	padding: 5px;
 	width: 100%;	
 }
 
 .container-fluid {
 	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -42,7 +59,8 @@ span {
 
 h1 {
     color: #901E5F;
-    font-weight: bold;	
+    font-weight: bold;
+	text-align: center;
 }
 
 .container {
@@ -54,7 +72,20 @@ li {
 	text-align: left;
 }
 
-.card-text img {
+ol li img {
+	margin: 10px;
+	padding: 5px;
+}
+
+.text-y {
+    color: #E8B767;
+}
+
+.text-p {
+    color: #901E5F;
+}
+
+.card-text img{
 	margin: 10px;
 	padding: 10px;
 }
@@ -65,7 +96,6 @@ video::cue(.bg_black) {
 }
 
 video::cue(.f_size) {
-	background-color: black;
 	font-size: 20px;
 }
 
@@ -82,6 +112,11 @@ video::cue(.f_size) {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+h2 {
+	margin-top: 10px;
+	font-size: 2em;
 }
 
 @media screen and (max-width:768px){
