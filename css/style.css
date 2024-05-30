@@ -6,18 +6,27 @@ body {
 	padding-left: 10px;
 	padding-right: 10px;
 	font-family: Verdana;
+	align-items: center; 
+  justify-content: center;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 400px;
+  align-items: center; 
+  justify-content: center;
   text-align: center;
-  flex: 1 1 200px; /* Kartların esnek olmasını sağlar ve min genişlik ayarlar */
-  margin: 10px; /* Kartlar arasında boşluk bırakır */
+  flex: 1 1 200px;
+  margin: 10px; 
   display: flex;
   flex-direction: column;
 }
 
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Görüntünün kart içine sığmasını sağlar */
+}
 .no-link-style {
   color: inherit;
   text-decoration: none;
@@ -90,6 +99,8 @@ ol li img {
 	padding: 10px;
 }
 
+
+
 video::cue(.bg_black) {
     background-color: black;
 	font-size: 20px;
@@ -116,7 +127,7 @@ video::cue(.f_size) {
 
 h2 {
 	margin-top: 10px;
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 @media screen and (max-width:768px){
